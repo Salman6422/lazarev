@@ -1,0 +1,214 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #FFFFFF;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+nav{
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+  background-color: #111111;
+  height: 13vh;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2vw 3vw;
+  margin-left: 4vw;
+  z-index: 10;
+}
+.nav-part-2 h4:hover{
+  color: #4A4A4A;
+  transition: all ease .5s;
+}
+.nav-part-2 h4:nth-last-child(1):hover{
+  color: #0BA34E;
+}
+nav h1{
+  font-size: 1.5vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.nav-part-2{
+  cursor: pointer;
+  display: flex;
+  padding: 1.6vh 0;
+  letter-spacing: -0.5px;
+  gap: 2vw;
+  z-index: 10;
+}
+.nav-part-2 h4{
+  font-size: 0.9vw;
+  text-transform: uppercase;
+  margin-bottom: 2.2vw;
+  font-weight: 600;
+}
+.nav-part-2 h5{
+   margin-bottom: 0.7vw;
+   /* background-color: rgb(19, 19, 255); */
+   display: none;
+   overflow: hidden;
+   cursor: pointer;
+}
+.nav-part-2 h5 span:hover{
+  color: #0BA34E;
+  transition: all ease .2s;
+}
+.nav-part-2 h5 span{
+  font-size: 0.9vw;
+  font-weight: 300;
+  display: inline-block;
+  transform: translateY(25px);
+}
+nav button{
+  margin-right: 8vw;
+  padding: 0.9vw;
+  background-color: #0BA34E;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1vw;
+  transition: all ease .3s;
+  cursor: pointer;
+}
+nav button svg{
+  height: 1vw ;
+  width: 2vw;
+}
+nav button:hover {
+  background-color: #015827e5;
+}
+.nav-bottom{
+  height: 0;
+  width: 86%;
+  /* background-color: red; */
+  background-color: #111111;
+  position: absolute;
+  top: 100%;
+  z-index: 9;
+  border-bottom: 1px solid #dadada;
+}
+.page-1{
+  height: 100vh;
+  width: 100%;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-1 #first-h1{
+  margin-top: 2vw;
+}
+.page-1 h1 #spanny{
+  /* word-spacing: 2px; */
+  letter-spacing: -6px;
+  margin-right: 25px;
+}
+.page-1 h1 span{
+  letter-spacing: -9px;
+ }
+.page-1 #second-h1{
+  letter-spacing: -9px;
+  word-spacing: 20px;
+}
+.page-1 h1{
+  font-size: 7vw;
+  line-height: 7vw;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+.page-1 h1 svg{
+  height: 5vw;
+  width: 5vw;
+  background-color: #0BA34E;
+  border-radius: 50%;
+  margin-left: -7px;
+}
+.page-1 p{
+  text-align: center;
+  font-size: 1vw;
+  margin-top: 3vw;
+  word-spacing: -1px;  
+  color: whitesmoke;
+}
+.page-1-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-1-btns h4{
+  font-size: 0.9vw;
+  padding: 4px 8px;
+  font-weight: 100;
+  margin: 1px;
+  text-transform: lowercase;
+  border: 1px solid #707070;
+  border-radius: 50px;
+  
+  color: whitesmoke;
+}
+.page-1-btns h4:nth-last-child(2){
+  border: none;
+  font-size: 1vw;
+  padding: 0;
+}
+.moving-div{
+  /* background-color: red; */
+  position: absolute;
+  bottom: 3%;
+  /* z-index: 9; */
+  width: 45%;
+  white-space: nowrap;
+  padding: 1vw;
+  overflow: hidden;
+}
+.moving-div .move{
+  display: inline-block;
+  animation-name: mobe;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.moving-div .move img{
+  height: 1.5vw;
+  margin: 0 1vw;
+}
+@keyframes mobe {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.blur-left{
+  height: 100%;
+  width: 10%;
+  background: linear-gradient( to right, #111111, transparent);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+}
+.blur-right{
+  height: 100%;
+  width: 10%;
+  background: linear-gradient( to right, transparent, #111111);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 1;
+}
+.page-2{
+  height: 100vh;
+  width: 100%;
+  background-color: #111111;
+}
